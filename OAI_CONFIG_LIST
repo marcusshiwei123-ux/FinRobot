@@ -1,7 +1,10 @@
 [
-    {
-        "model": "gpt-4-0125-preview",
-        "api_key": "<import OpenAI from "openai";
+  {
+    "model_name": "gpt-4o-mini", 
+    "provider": "openai",
+    "api_type": "openai",
+    "api_base": "https://api.openai.com/v1",
+    "api_key": "sk-import OpenAI from "openai";
 const client = new OpenAI();
 
 const response = await client.responses.create({
@@ -10,24 +13,8 @@ const response = await client.responses.create({
 });
 
 console.log(response.output_text);
->"
-    },
-    {
-        "model": "gpt-4-1106-vision-preview",
-        "api_key": "<your OpenAI API key here>"
-    },
-    {
-        "model": "<your Azure OpenAI deployment name>",
-        "api_key": "<your Azure OpenAI API key here>",
-        "base_url": "<your Azure OpenAI API base here>",
-        "api_type": "azure",
-        "api_version": "2024-02-15-preview"
-    },
-    {
-        "model": "<your Azure OpenAI deployment name>",
-        "api_key": "<your Azure OpenAI API key here>",
-        "base_url": "<your Azure OpenAI API base here>",
-        "api_type": "azure",
-        "api_version": "2024-02-15-preview"
-    }
+",
+    "temperature": 0.2,
+    "max_tokens": 4096
+  }
 ]
